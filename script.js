@@ -1,6 +1,4 @@
-const LIVE_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbw_mJ8mmrvHXBpCbsS15akex4jlXTExnXbPsCKYtxfSgY3vQ8bNFy3vhkJmG03dsEUsZg/exec";
-
-const storageKey = "access-point-lawn-care-leads";
+const script.google.com/macros/s/.../exec";
 const form = document.getElementById("bookingForm");
 const notice = document.getElementById("formNotice");
 const submitBtn = document.getElementById("submitBtn");
