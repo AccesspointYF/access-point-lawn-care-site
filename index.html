@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Point Lawn Care</title>
+  <style>
+    :root{
+      --green:#1fae4b;--green-dark:#16873a;--bg:#f6fbf7;--text:#102018;--muted:#5b6b60;--card:#ffffff;--border:#dfe9e1;
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(#fff, var(--bg));color:var(--text)}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px} header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0} .brand{font-size:28px;font-weight:800;color:var(--green)}
+    .sub{font-size:13px;color:var(--muted)} .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;padding:14px 20px;border-radius:16px;border:none;cursor:pointer;font-weight:700}
+    .btn:hover{background:var(--green-dark)} .btn.outline{background:#fff;color:var(--green);border:1px solid var(--green)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:48px 0} .pill{display:inline-block;background:#eaf8ee;color:var(--green-dark);padding:10px 14px;border-radius:999px;font-size:13px;font-weight:700}
+    h1{font-size:52px;line-height:1.02;margin:16px 0} p{line-height:1.6} .card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+    .grid{display:grid;gap:18px} .grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)} .grid-4{grid-template-columns:repeat(4,1fr)}
+    .service{min-height:190px} label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}
+    input, select, textarea{width:100%;padding:13px 14px;border:1px solid #cfdacf;border-radius:14px;font-size:15px} textarea{min-height:110px;resize:vertical}
+    .section{padding:16px 0 34px} .pricing-row,.lead-row{display:grid;grid-template-columns:2fr 1fr;gap:12px;align-items:center;border:1px solid var(--border);border-radius:16px;padding:14px 16px;margin-bottom:12px;background:#fff}
+    .lead-table-head,.lead-row-6{display:grid;grid-template-columns:1fr 1.3fr 1.3fr 1.2fr 1.3fr 1fr;gap:10px}
+    .lead-table-head{background:#f5f8f6;padding:12px 14px;font-size:12px;font-weight:700;color:#617064;text-transform:uppercase}
+    .lead-row-6{padding:12px 14px;border-top:1px solid var(--border);font-size:14px} .status{display:inline-block;background:#eaf8ee;color:var(--green-dark);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    .muted{color:var(--muted)} footer{background:#fff;border-top:1px solid var(--border);margin-top:36px} .notice{padding:12px 14px;border-radius:14px;font-size:14px;margin-bottom:12px}
+    .notice.warn{background:#fff7df;border:1px solid #f1df97;color:#6d5a12} .notice.ok{background:#eaf8ee;border:1px solid #badebf;color:#175b2d}
+    @media (max-width:900px){.hero,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr} h1{font-size:38px} .lead-table-head,.lead-row-6{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <header><div class="container"><nav><div><div class="brand">Access Point Lawn Care</div><div class="sub">Professional lawn service in Brooksville & surrounding areas</div></div><a class="btn" href="tel:7276571868">Call 727-657-1868</a></nav></div></header>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="pill">Reliable Lawn Care • Fast Quotes • Recurring Service Available</span>
+        <h1>Clean, dependable lawn care that keeps your property looking sharp.</h1>
+        <p class="muted">Access Point Lawn Care provides mowing, cleanups, trimming, and refresh services for homes in Brooksville and surrounding areas. Book a quote online or call now for fast service.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="#booking">Book a Quote</a><a class="btn outline" href="mailto:lawncare@ap.com">Email lawncare@ap.com</a></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Book a Quote or Service</h2>
+        <p class="muted">Your Google Sheets webhook is already connected in this package.</p>
+        <form id="bookingForm" class="grid">
+          <div class="grid grid-2">
+            <div><label>Full Name</label><input required name="name" /></div>
+            <div><label>Phone</label><input required name="phone" /></div>
+          </div>
+          <div class="grid grid-2">
+            <div><label>Email</label><input type="email" name="email" /></div>
+            <div><label>Service Address</label><input required name="address" /></div>
+          </div>
+          <div class="grid grid-3">
+            <div><label>Service Needed</label><select name="service"><option>Lawn Mowing</option><option>Yard Cleanup</option><option>Trimming & Edging</option><option>Mulch & Refresh</option></select></div>
+            <div><label>Preferred Date</label><input type="date" required name="date" /></div>
+            <div><label>Preferred Time</label><select name="time"><option>8:00 AM</option><option>9:00 AM</option><option selected>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></div>
+          </div>
+          <div><label>Project Details</label><textarea name="details" placeholder="Tell us about the yard size, cleanup needs, gate access, HOA details, or anything else helpful."></textarea></div>
+          <div id="formNotice"></div>
+          <button class="btn" id="submitBtn" type="submit">Submit Booking Request</button>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Services built for fast curb appeal</h2>
+      <div class="grid grid-4">
+        <div class="card service"><h3>Lawn Mowing</h3><p class="muted">Clean, dependable cuts for residential properties and recurring routes.</p></div>
+        <div class="card service"><h3>Yard Cleanups</h3><p class="muted">Fast cleanup service for overgrown yards, leaves, and neglected lots.</p></div>
+        <div class="card service"><h3>Trimming & Edging</h3><p class="muted">Sharp finishing work that makes the whole property look professionally maintained.</p></div>
+        <div class="card service"><h3>Mulch & Refresh</h3><p class="muted">Simple landscape refresh services to improve curb appeal quickly.</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="grid grid-2">
+        <div class="card">
+          <h2>Simple starting prices</h2>
+          <div class="pricing-row"><div><strong>Lawn Mowing</strong></div><div><strong>$40–$75</strong></div></div>
+          <div class="pricing-row"><div><strong>Yard Cleanup</strong></div><div><strong>$150–$400+</strong></div></div>
+          <div class="pricing-row"><div><strong>Trimming & Edging</strong></div><div><strong>$25–$85</strong></div></div>
+          <div class="pricing-row"><div><strong>Mulch & Refresh</strong></div><div><strong>Custom Quote</strong></div></div>
+        </div>
+        <div class="card" style="background:#102018;color:#fff">
+          <h2>Why this site converts</h2>
+          <p>• Clear call-to-action above the fold</p><p>• Fast booking form for quote requests</p><p>• Simple pricing to reduce hesitation</p><p>• Designed for mobile-first lawn care leads</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="booking">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap">
+          <div><h2 style="margin-bottom:6px">Lead tracker built into the website</h2><p class="muted">New booking requests are stored in the browser for backup and sent to Google Sheets.</p></div>
+          <button class="btn outline" id="exportCsvBtn" type="button">Export Leads CSV</button>
+        </div>
+        <div style="margin-top:18px;border:1px solid var(--border);border-radius:16px;overflow:hidden">
+          <div class="lead-table-head"><div>Lead</div><div>Name</div><div>Service</div><div>Date</div><div>Phone</div><div>Status</div></div>
+          <div id="leadRows"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container" style="padding:26px 20px"><div class="grid grid-3"><div><div style="font-size:22px;font-weight:800;color:var(--green)">Access Point Lawn Care</div><p class="muted">Professional lawn mowing, cleanups, trimming, and refresh service for Brooksville and surrounding areas.</p></div><div><strong>Contact</strong><p class="muted">727-657-1868<br/>lawncare@ap.com<br/>Brooksville & surrounding areas</p></div><div><strong>Webhook connected</strong><p class="muted">This package already includes your live Google Apps Script URL in script.js.</p></div></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
