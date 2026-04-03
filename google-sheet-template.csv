@@ -1,1 +1,1 @@
-Lead ID,Created At,Status,Name,Phone,Email,Address,Service,Preferred Date,Preferred Time,Details
+Lead ID,Created At,Timestamp ISO,Status,Name,Phone,Email,Address,Service,Yard Size,Frequency,Preferred Date,Preferred Time,Estimate Total,Estimate Breakdown,Message,Details

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Access Point Lawn Care logo">
+  <rect width="1200" height="320" rx="28" fill="#ffffff"/>
+  <g transform="translate(34,34)">
+    <circle cx="126" cy="126" r="118" fill="#f2fbf2" stroke="#1f7a1f" stroke-width="10"/>
+    <path d="M89 175c15-57 40-100 76-132 11 25 10 54-2 83 25-16 48-26 73-31-10 59-48 105-114 137-12 6-25-1-29-14-4-13-6-28-4-43z" fill="#20a534"/>
+    <path d="M98 193c40-33 84-56 133-70" fill="none" stroke="#145214" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="295" y="132" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" fill="#22a83a">ACCESS POINT</text>
+  <text x="297" y="204" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800" fill="#1f7a1f">LAWN CARE</text>
+  <text x="299" y="256" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#475569">Brooksville &amp; surrounding areas • 727-657-1868</text>
+</svg>

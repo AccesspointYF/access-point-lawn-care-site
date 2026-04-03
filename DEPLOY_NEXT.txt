@@ -1,12 +1,7 @@
 DEPLOY NEXT
 
-Your webhook is connected.
-
-Now do this:
-1) Create a GitHub repository
-2) Upload these files
-3) In Vercel, import the repo
-4) Click Deploy
-5) Open the live site
-6) Submit a test lead
-7) Check your Google Sheet
+1) Replace the repo files with the updated package contents.
+2) If needed, paste your live Google Apps Script /exec URL into config.js.
+3) Commit changes to GitHub.
+4) Vercel will redeploy automatically, or trigger a redeploy manually.
+5) Submit one test quote request and confirm it reaches Google Sheets.
