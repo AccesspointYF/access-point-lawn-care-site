@@ -509,9 +509,22 @@ textarea:focus {
   gap: 15px;
 }
 
+.site-header {
+  background: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 10px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .site-logo {
   height: 100px;
   width: auto;
+  display: block;
 }
 
 .brand-text strong {
