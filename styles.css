@@ -537,3 +537,19 @@ textarea:focus {
   color: #666;
 }
 }
+.site-logo {
+  height: 110px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-header {
+  padding: 15px 0;
+}
