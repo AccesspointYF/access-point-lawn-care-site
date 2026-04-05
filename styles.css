@@ -497,5 +497,30 @@ textarea:focus {
   height: 140px;
   width: auto;
   display: block;
+}site-header {
+  background: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 10px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.site-logo {
+  height: 100px;
+  width: auto;
+}
+
+.brand-text strong {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.brand-text small {
+  font-size: 12px;
+  color: #666;
 }
 }
