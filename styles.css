@@ -493,5 +493,9 @@ textarea:focus {
   .trust-card,
   .step-card {
     padding: 20px;
-  }
+  }.site-logo {
+  height: 140px;
+  width: auto;
+  display: block;
+}
 }
