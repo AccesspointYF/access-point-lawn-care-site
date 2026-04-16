@@ -509,10 +509,90 @@ textarea:focus {
   gap: 15px;
 }
 
+/* HEADER BASE */
 .site-header {
   background: #ffffff;
-  border-bottom: 2px solid #e5e5e5;
-  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* NAV WRAP */
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* LOGO */
+.site-logo {
+  height: 70px;
+  width: auto;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-solid {
+  background: #2e7d32;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-solid:hover {
+  background: #256628;
+}
+
+.btn-nav {
+  margin-left: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .site-logo {
+    height: 55px;
+  }
+
+  .btn-nav {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
 
 .brand {
