@@ -4,20 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Access Point Lawn Care | Brooksville, FL Lawn Service</title>
-  <meta name="description" content="Reliable lawn mowing, edging, cleanup, and recurring lawn care in Brooksville and surrounding areas. Request a free quote from Access Point Lawn Care." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Reliable lawn mowing, edging, cleanup, and recurring lawn care in Brooksville and surrounding areas." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
- <header class="site-header">
+
+<!-- HEADER -->
+<header class="site-header">
   <div class="container nav-wrap">
-   <a class="brand" href="#top" aria-label="Access Point Lawn Care home">
-  <img src="assets/logo.png" alt="Access Point Lawn Care Logo" style="height:150px; width:auto;" />
-</a>
-     
-  
+
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="Access Point Lawn Care Logo" style="height:140px;" />
+    </a>
 
     <nav class="nav-links">
       <a href="#services">Services</a>
@@ -29,246 +30,81 @@
     <a class="btn btn-solid btn-nav" href="tel:7276571868">
       Call 727-657-1868
     </a>
+
   </div>
 </header>
-  </div>
-</header>
-  <main id="top">
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Fast quotes • Recurring service available • Residential & small commercial</span>
-          <h1>Reliable lawn care that keeps your property clean, sharp, and stress-free.</h1>
-          <p class="hero-text">Access Point Lawn Care provides straightforward mowing, edging, cleanup, and routine maintenance for Brooksville and nearby communities. Call or request service online to get a fast quote.</p>
 
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#quote">Get Free Quote</a>
-            <a class="btn btn-ghost" href="mailto:lawncare@ap.com">Email Us</a>
-          </div>
+<!-- MAIN -->
+<main id="top">
 
-          <div class="hero-points" role="list" aria-label="Highlights">
-            <div class="point" role="listitem">
-              <strong>Free quote</strong>
-              <span>Quick response for new requests</span>
-            </div>
-            <div class="point" role="listitem">
-              <strong>Starting from $40</strong>
-              <span>Simple pricing for routine service</span>
-            </div>
-            <div class="point" role="listitem">
-              <strong>Brooksville area</strong>
-              <span>Serving surrounding neighborhoods too</span>
-            </div>
-          </div>
-        </div>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container hero-grid">
 
-        <aside class="quote-card card" id="quote">
-          <div class="card-header">
-            <span class="mini-tag">Request service</span>
-            <h2>Get a free lawn care quote</h2>
-            <p>Tell us a few details and we’ll send your request through the website form.</p>
-          </div>
+      <div class="hero-copy">
+        <h1>Reliable Lawn Care in Brooksville</h1>
+        <p>Professional mowing, edging, cleanup, and maintenance services you can trust.</p>
 
-          <div class="estimate-box" aria-live="polite">
-            <span class="estimate-label">Estimated starting price</span>
-            <strong id="estimateTotal">$40+</strong>
-            <small id="estimateBreakdown">Based on a small yard mowing visit.</small>
-          </div>
-
-          <form id="bookingForm" class="quote-form">
-            <div class="field-grid two-up">
-              <label>
-                <span>Name</span>
-                <input required name="name" autocomplete="name" />
-              </label>
-              <label>
-                <span>Phone</span>
-                <input required name="phone" autocomplete="tel" />
-              </label>
-            </div>
-
-            <div class="field-grid two-up">
-              <label>
-                <span>Email</span>
-                <input type="email" name="email" autocomplete="email" />
-              </label>
-              <label>
-                <span>Service address</span>
-                <input required name="address" autocomplete="street-address" />
-              </label>
-            </div>
-
-            <div class="field-grid three-up">
-              <label>
-                <span>Yard size</span>
-                <select name="yardSize" id="yardSize">
-                  <option value="small">Small</option>
-                  <option value="medium">Medium</option>
-                  <option value="large">Large</option>
-                  <option value="xlarge">Extra large</option>
-                </select>
-              </label>
-              <label>
-                <span>Service type</span>
-                <select name="service" id="serviceType">
-                  <option value="Lawn Mowing">Lawn Mowing</option>
-                  <option value="Lawn Mowing + Edging">Lawn Mowing + Edging</option>
-                  <option value="Yard Cleanup">Yard Cleanup</option>
-                  <option value="Property Refresh">Property Refresh</option>
-                </select>
-              </label>
-              <label>
-                <span>Frequency</span>
-                <select name="frequency" id="frequency">
-                  <option value="one-time">One-time</option>
-                  <option value="weekly">Weekly</option>
-                  <option value="biweekly">Biweekly</option>
-                  <option value="monthly">Monthly</option>
-                </select>
-              </label>
-            </div>
-
-            <div class="field-grid two-up">
-              <label>
-                <span>Preferred date</span>
-                <input type="date" required name="date" id="preferredDate" />
-              </label>
-              <label>
-                <span>Preferred time</span>
-                <select name="time">
-                  <option>8:00 AM</option>
-                  <option>9:00 AM</option>
-                  <option selected>10:00 AM</option>
-                  <option>11:00 AM</option>
-                  <option>1:00 PM</option>
-                  <option>2:00 PM</option>
-                  <option>3:00 PM</option>
-                  <option>4:00 PM</option>
-                </select>
-              </label>
-            </div>
-
-            <label>
-              <span>Project details</span>
-              <textarea name="message" placeholder="Gate access, overgrowth, cleanup needs, pets, HOA notes, or anything else helpful."></textarea>
-            </label>
-
-            <input type="hidden" name="estimateTotal" id="estimateTotalField" />
-            <input type="hidden" name="estimateBreakdown" id="estimateBreakdownField" />
-
-            <div id="formNotice"></div>
-            <button class="btn btn-solid full-width" id="submitBtn" type="submit">Request Free Quote</button>
-            <p class="form-note">You can also call or text <a href="tel:7276571868">727-657-1868</a>.</p>
-          </form>
-        </aside>
+        <a class="btn btn-solid" href="#quote">Get Free Quote</a>
       </div>
-    </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-intro">
-          <span class="mini-tag">Services</span>
-          <h2>Clean, simple lawn care services</h2>
-          <p>Focused on the work most homeowners ask for most often.</p>
-        </div>
+      <!-- FORM -->
+      <div class="quote-card" id="quote">
+        <h2>Request a Quote</h2>
 
-        <div class="service-grid">
-          <article class="card service-card">
-            <h3>Lawn Mowing</h3>
-            <p>Routine mowing for a neat, dependable finish that keeps the property looking maintained.</p>
-          </article>
-          <article class="card service-card">
-            <h3>Edging & Trimming</h3>
-            <p>Sharp edges and trimmed lines around driveways, beds, fences, and walkways.</p>
-          </article>
-          <article class="card service-card">
-            <h3>Yard Cleanup</h3>
-            <p>Cleanup help for leaves, overgrowth, storm mess, and properties that need extra attention.</p>
-          </article>
-          <article class="card service-card">
-            <h3>Recurring Maintenance</h3>
-            <p>Weekly, biweekly, or monthly visits to keep your lawn under control without the hassle.</p>
-          </article>
-        </div>
+        <form>
+          <input placeholder="Name" required />
+          <input placeholder="Phone" required />
+          <input placeholder="Address" required />
+
+          <select>
+            <option>Small Yard</option>
+            <option>Medium Yard</option>
+            <option>Large Yard</option>
+          </select>
+
+          <button class="btn btn-solid">Request Quote</button>
+        </form>
       </div>
-    </section>
 
-    <section class="section muted-band" id="pricing">
-      <div class="container pricing-layout">
-        <div>
-          <div class="section-intro left-align">
-            <span class="mini-tag">Pricing</span>
-            <h2>Starting prices</h2>
-            <p>Final pricing depends on yard size, property condition, and requested work.</p>
-          </div>
+    </div>
+  </section>
 
-          <div class="price-list">
-            <div class="price-row"><span>Small yard</span><strong>$40+</strong></div>
-            <div class="price-row"><span>Medium yard</span><strong>$60+</strong></div>
-            <div class="price-row"><span>Large yard</span><strong>$80+</strong></div>
-            <div class="price-row"><span>Yard cleanup</span><strong>$150+</strong></div>
-          </div>
-        </div>
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
 
-        <div class="card trust-card">
-          <span class="mini-tag">Why choose us</span>
-          <h3>Professional service without the runaround</h3>
-          <ul class="check-list">
-            <li>Fast quote requests through the website</li>
-            <li>Simple service options that are easy to book</li>
-            <li>Routine maintenance available</li>
-            <li>Local service for Brooksville and nearby areas</li>
-            <li>Clear communication by phone, text, or email</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container process-grid">
-        <div class="section-intro left-align">
-          <span class="mini-tag">How it works</span>
-          <h2>Quick and easy from quote to service</h2>
-        </div>
-        <div class="step-grid">
-          <article class="step-card">
-            <span>1</span>
-            <h3>Request your quote</h3>
-            <p>Fill out the form with your address, yard size, and service needs.</p>
-          </article>
-          <article class="step-card">
-            <span>2</span>
-            <h3>Get a response</h3>
-            <p>Your request is saved and can be sent to your Google Sheet lead workflow.</p>
-          </article>
-          <article class="step-card">
-            <span>3</span>
-            <h3>Schedule service</h3>
-            <p>Confirm the visit time and get your property taken care of.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" id="contact">
-    <div class="container footer-grid">
-      <div>
-        <h3>Access Point Lawn Care</h3>
-        <p>Professional lawn care for Brooksville, Florida and surrounding areas.</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p><a href="tel:7276571868">727-657-1868</a><br><a href="mailto:lawncare@ap.com">lawncare@ap.com</a></p>
-      </div>
-      <div>
-        <h4>Service area</h4>
-        <p>Brooksville & surrounding areas</p>
+      <div class="service-grid">
+        <div>Lawn Mowing</div>
+        <div>Edging & Trimming</div>
+        <div>Yard Cleanup</div>
+        <div>Recurring Maintenance</div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="config.js"></script>
-  <script src="script.js"></script>
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+
+      <p>Small Yard: $40+</p>
+      <p>Medium Yard: $60+</p>
+      <p>Large Yard: $80+</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container">
+    <p>Access Point Lawn Care</p>
+    <p>727-657-1868</p>
+    <p>Brooksville, FL</p>
+  </div>
+</footer>
+
 </body>
 </html>
