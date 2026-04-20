@@ -602,9 +602,10 @@ textarea:focus {
 }
 
 .site-logo {
-  height: 120px;
+  height: 50px;
   width: auto;
   display: block;
+}
 }
 }
 }
