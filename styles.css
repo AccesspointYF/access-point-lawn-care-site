@@ -620,16 +620,14 @@ textarea:focus {
 }
 }
 .site-logo {
-  height: 80px;
+  height: 70px;
   width: auto;
   display: block;
-  object-fit: contain;
 }
 
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 18px;
 }
 
 .site-header {
