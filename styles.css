@@ -536,8 +536,11 @@ textarea:focus {
 
 /* LOGO */
 .site-logo {
-  height: 70px;
+  height: 75px;
   width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
 }
 
 /* NAV LINKS */
