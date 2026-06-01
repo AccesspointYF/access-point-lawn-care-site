@@ -49,13 +49,7 @@ img { max-width: 100%; display: block; }
   gap: 20px;
 }
 
-.brand {
-   display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 160px;
-  height: 90px;
-  overflow: visible;
+
 }
 
 }
@@ -506,10 +500,7 @@ textarea:focus {
   padding: 10px 0;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+
 }
 
 /* HEADER BASE */
@@ -586,8 +577,6 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
     display: none;
   }
 
-  .site-logo {
-    height: 55px;
   }
 
   .btn-nav {
@@ -600,14 +589,12 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
   display: flex;
   align-items: center;
   gap: 15px;
+  width: 250px;
+  height: 120px;
+  overflow: visible;
 }
 
-.site-logo {
-   height: 85px;
-  width: auto;
-  max-width: 150px;
-  object-fit: contain;
-  display: block;
+
 }
 }
 }
@@ -624,24 +611,16 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
   color: #666;
 }
 }
-.site-logo {
-  height: 70px;
-  width: auto;
-  display: block;
+
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  max-width: 90px;
-  height: 45px;
-  overflow: hidden;
+
 }
 
 .site-logo {
-  height: 38px;
+  height: 110px;
   width: auto;
-  max-width: 85px;
+  max-width: 240px;
   object-fit: contain;
   display: block;
 }
