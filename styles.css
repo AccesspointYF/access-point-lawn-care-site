@@ -50,10 +50,11 @@ img { max-width: 100%; display: block; }
 }
 
 .brand {
-  display: flex;
+   display: flex;
   align-items: center;
-  max-width: 400px;
-  height: 180px;
+  gap: 15px;
+  width: 160px;
+  height: 90px;
   overflow: visible;
 }
 
@@ -602,10 +603,9 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
 }
 
 .site-logo {
-  .site-logo {
-  height: 180px;
+   height: 85px;
   width: auto;
-  max-width: 400px;
+  max-width: 150px;
   object-fit: contain;
   display: block;
 }
