@@ -34,12 +34,11 @@ img { max-width: 100%; display: block; }
 }
 
 .site-header {
-  position: sticky;
+   position: sticky;
   top: 0;
-  z-index: 20;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(215, 228, 218, 0.9);
+  z-index: 1000;
+  background: white;
+}
 }
 
 .nav-wrap {
