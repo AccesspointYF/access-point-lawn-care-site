@@ -605,9 +605,10 @@ textarea:focus {
 }
 
 .site-logo {
-  height: 80px;
+  .site-logo {
+  height: 38px;
   width: auto;
-  max-width: 180px;
+  max-width: 85px;
   object-fit: contain;
   display: block;
 }
