@@ -625,11 +625,7 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
   display: block;
 }
 
-.nav-wrap {
- display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
+
 }
 }
 
