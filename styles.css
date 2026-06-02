@@ -527,10 +527,11 @@ textarea:focus {
 .brand {
   display: flex;
   align-items: center;
-  gap: 4px;
-  width: 35px;
-  height: 35px;
+  gap: 12px;
+  width: auto;
+  height: auto;
   overflow: visible;
+}
 }
 }
 
@@ -571,7 +572,12 @@ textarea:focus {
 }
 
 /* LOGO */
-
+.site-logo {
+  width: 140px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 }
 
 /* NAV LINKS */
