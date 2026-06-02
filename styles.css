@@ -588,9 +588,9 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
 .brand {
   display: flex;
   align-items: center;
-  gap: 4px;
-  width: 35px;
-  height: 35px;
+  gap: 8px;
+  width: 90px;
+  height: 55px;
   overflow: visible;
 }
 
@@ -618,9 +618,9 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
 }
 
 .site-logo {
-  height: 35px;
+  height: 50px;
   width: auto;
-  max-width: 35px;
+  max-width: 90px;
   object-fit: contain;
   display: block;
 }
