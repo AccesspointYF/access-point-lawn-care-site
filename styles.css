@@ -527,12 +527,11 @@ textarea:focus {
 .brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  padding: 0;
-  overflow: hidden;
-  flex-shrink: 0;
+  gap: 4px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+}
 }
 
 .site-logo {
@@ -628,15 +627,7 @@ textarea:focus {
   }
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 65px;
-  height: 65px;
-  padding: 0;
-  overflow: hidden;
-  flex-shrink: 0;
+
 }
 
 }
@@ -661,13 +652,7 @@ textarea:focus {
 
 }
 
-.site-logo {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  display: block;
-  max-width: 52px;
-  max-height: 52px;
+
 }
 
 
