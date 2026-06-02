@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -12,102 +13,112 @@
 
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <div class="container nav-wrap">
 
-   <a class="brand" href="#top">
+```
+<a class="brand" href="#top">
   <img src="assets/logo.png" alt="Access Point Lawn Care Logo" class="site-logo" />
+</a>
 
+<nav class="nav-links">
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#quote">Quote</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <nav class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#quote">Quote</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-   <a href="tel:7276571868" class="cta-button">Call 727-657-1868</a>
-    </a>
+<a href="tel:7276571868" class="cta-button">Call 727-657-1868</a>
+```
 
   </div>
 </header>
 
-<!-- MAIN -->
 <main id="top">
 
-  <!-- HERO -->
   <section class="hero-section">
     <div class="container hero-grid">
 
-      <div class="hero-copy">
-        <h1>Reliable Lawn Care in Brooksville</h1>
-        <p>Professional mowing, edging, cleanup, and maintenance services you can trust.</p>
+```
+  <div class="hero-copy">
+    <h1>Reliable Lawn Care in Brooksville</h1>
+    <p>Professional mowing, edging, cleanup, and maintenance services you can trust.</p>
 
-        <a class="btn btn-solid" href="#quote">Get Free Quote</a>
-      </div>
+    <a class="btn btn-solid" href="#quote">Get Free Quote</a>
+  </div>
 
-      <!-- FORM -->
-      <div class="quote-card" id="quote">
-        <h2>Request a Quote</h2>
+  <div class="quote-card" id="quote">
+    <h2>Request a Quote</h2>
 
-        <form name="quote" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="quote" />
+    <form name="quote" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="quote" />
 
-  <input name="name" placeholder="Name" required />
-  <input name="phone" placeholder="Phone" required />
-  <input name="address" placeholder="Address" required />
+      <input type="text" name="name" placeholder="Name" required />
 
-  <select name="yard_size" required>
-    <option value="">Select Yard Size</option>
-    <option value="Small Yard">Small Yard</option>
-    <option value="Medium Yard">Medium Yard</option>
-    <option value="Large Yard">Large Yard</option>
-  </select>
+      <input type="tel" name="phone" placeholder="Phone" required />
 
-  <button class="btn btn-solid" type="submit">Request Quote</button>
-</form>
-      </div>
+      <input type="text" name="address" placeholder="Address" required />
 
-    </div>
+      <select name="yard_size" required>
+        <option value="">Select Yard Size</option>
+        <option value="Small Yard">Small Yard</option>
+        <option value="Medium Yard">Medium Yard</option>
+        <option value="Large Yard">Large Yard</option>
+      </select>
+
+      <button class="btn btn-solid" type="submit">
+        Request Quote
+      </button>
+    </form>
+
+  </div>
+
+</div>
+```
+
   </section>
 
-  <!-- SERVICES -->
   <section id="services">
     <div class="container">
       <h2>Services</h2>
 
-      <div class="service-grid">
-        <div>Lawn Mowing</div>
-        <div>Edging & Trimming</div>
-        <div>Yard Cleanup</div>
-        <div>Recurring Maintenance</div>
-      </div>
-    </div>
+```
+  <div class="service-grid">
+    <div>Lawn Mowing</div>
+    <div>Edging & Trimming</div>
+    <div>Yard Cleanup</div>
+    <div>Recurring Maintenance</div>
+  </div>
+</div>
+```
+
   </section>
 
-  <!-- PRICING -->
   <section id="pricing">
     <div class="container">
       <h2>Pricing</h2>
 
-      <p>Small Yard: $40+</p>
-      <p>Medium Yard: $60+</p>
-      <p>Large Yard: $80+</p>
-    </div>
+```
+  <p>Small Yard: $40+</p>
+  <p>Medium Yard: $60+</p>
+  <p>Large Yard: $80+</p>
+</div>
+```
+
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer id="contact">
   <div class="container">
     <p>Access Point Lawn Care</p>
     <p>727-657-1868</p>
-      </div>
+  </div>
 </footer>
 
 </body>
 </html>
+
+
  
 
