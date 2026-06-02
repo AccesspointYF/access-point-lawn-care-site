@@ -51,19 +51,22 @@
       <div class="quote-card" id="quote">
         <h2>Request a Quote</h2>
 
-        <form>
-          <input placeholder="Name" required />
-          <input placeholder="Phone" required />
-          <input placeholder="Address" required />
+        <form name="quote" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="quote" />
 
-          <select>
-            <option>Small Yard</option>
-            <option>Medium Yard</option>
-            <option>Large Yard</option>
-          </select>
+  <input name="name" placeholder="Name" required />
+  <input name="phone" placeholder="Phone" required />
+  <input name="address" placeholder="Address" required />
 
-          <button class="btn btn-solid" type="submit">Request Quote</button>
-        </form>
+  <select name="yard_size" required>
+    <option value="">Select Yard Size</option>
+    <option value="Small Yard">Small Yard</option>
+    <option value="Medium Yard">Medium Yard</option>
+    <option value="Large Yard">Large Yard</option>
+  </select>
+
+  <button class="btn btn-solid" type="submit">Request Quote</button>
+</form>
       </div>
 
     </div>
