@@ -511,13 +511,57 @@ textarea:focus {
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 6px 0;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* NAV WRAP */
+.nav-wrap {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* LOGO AREA */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.site-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+  max-width: 44px;
+  max-height: 44px;
+}
+
+/* KEEP QUOTE SECTION CLICKABLE */
+.quote,
+.quote-section,
+#quote {
+  position: relative;
+  z-index: 2;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .btn-nav {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
 
 /* NAV WRAP */
@@ -529,7 +573,7 @@ textarea:focus {
 }
 
 /* LOGO */
-https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.com
+
 }
 
 /* NAV LINKS */
