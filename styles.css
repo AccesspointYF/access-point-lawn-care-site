@@ -588,12 +588,13 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
-  width: 90px;
-  height: 55px;
-  overflow: visible;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  overflow: hidden;
+  flex-shrink: 0;
 }
-
 
 }
 }
@@ -618,11 +619,12 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
 }
 
 .site-logo {
-  height: 50px;
-  width: auto;
-  max-width: 90px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   display: block;
+  max-width: 52px;
+  max-height: 52px;
 }
 
 
@@ -631,4 +633,10 @@ https://github.com/AccesspointYF/access-point-lawn-care-site?utm_source=chatgpt.
 
 .site-header {
   padding: 15px 0;
+}
+.quote,
+.quote-section,
+#quote {
+  position: relative;
+  z-index: 2;
 }
