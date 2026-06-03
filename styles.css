@@ -527,8 +527,9 @@ textarea:focus {
 .brand {
   display: flex;
   align-items: center;
-  width: auto;
-  height: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
   overflow: visible;
 }
 }
