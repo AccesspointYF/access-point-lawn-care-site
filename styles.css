@@ -536,12 +536,11 @@ textarea:focus {
 }
 
 .site-logo {
+  .site-logo {
   width: 180px;
   height: auto;
-  max-width: none;
-  max-height: none;
   display: block;
-  object-fit: contain;
+  margin: 0;
 }
 }
 
